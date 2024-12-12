@@ -1,0 +1,169 @@
+@use "sass:math";
+
+$col: 12;
+
+@for $i from 1 through $col {
+    .m-#{$i} {
+        margin: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .ml-#{$i} {
+        margin-left: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .mr-#{$i} {
+        margin-right: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .mt-#{$i} {
+        margin-top: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .mb-#{$i} {
+        margin-bottom: ($i * 1rem);
+    }
+}
+
+@for $i from 1 through $col {
+    .mx-#{$i} {
+        margin: 0 ($i * 1rem);
+    }
+}
+.mx-auto {
+    margin: 0 auto;
+}
+.my-auto {
+    margin: auto 0;
+}
+@for $i from 1 through $col {
+    .my-#{$i} {
+        margin: ($i * 1rem) 0;
+    }
+}
+
+@for $i from 1 through $col {
+    .p-#{$i} {
+        padding: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .p-#{$i} {
+        padding: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .pl-#{$i} {
+        padding-left: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .pr-#{$i} {
+        padding-right: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .pt-#{$i} {
+        padding-top: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .pb-#{$i} {
+        padding-bottom: ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .px-#{$i} {
+        padding-bottom: 0 ($i * 1rem);
+    }
+}
+@for $i from 1 through $col {
+    .py-#{$i} {
+        padding-bottom: ($i * 1rem) 0;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align:left;
+}
+.text-right {
+    text-align: right;
+}
+.text-justified {
+    text-align: justify;
+}
+.text-start {
+    text-align: start;
+}
+.text-end {
+    text-align: end;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+.justify-start {
+    display: flex;
+    justify-content: flex-start;
+}
+.justify-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.justify-around {
+    display: flex;
+    justify-content: space-around;
+}
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+.align-start {
+    display: flex;
+    align-items: flex-start;
+}
+.align-end {
+    display: flex;
+    align-items: flex-end;
+}
+.align-baseline {
+    display: flex;
+    align-items:baseline;
+}
+.align-stretch {
+    display: flex;
+    align-items:stretch;
+}
+
+@for $i from 1 through $col {
+.gap-#{$i} {
+    gap: ($i * 1rem);
+}
+}

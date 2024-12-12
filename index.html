@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMPS School Basakuti Jharkhand</title>
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon" />
+    <!-- CSS Styles -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Fontawesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- ===================== Modal ==================== -->
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-box" onclick="stopPropagation(event)">
+      <div class="modal-close-btn" onclick="closeModal()">&times;</div>
+      <img src="images/modal/recruitment.jpeg">
+    </div>
+  </div>
+
+    <!-- =================== Navbar =================== -->
+
+    <nav class="navbar">
+      <div class="logo-wrapper">
+          <img class="logo-image" src="images/logo/school_logo.png"/>
+          <p class="logo-text">
+              <a href="#">KMPS</a>
+          </p>
+      </div>
+      <div class="nav-right">
+        <ul id="navbarMenu" class="navbar-menu-wrapper bg-primary-light-1">
+            <li class="nav-menu"><a class="active" href="index.html">Home</a></li>
+            <li class="nav-menu"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-menu"><a href="career.html">Career</a></li>
+            <li class="nav-menu"><a href="about.html">About Us</a></li>
+            <li class="nav-menu"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="navbar-menu-icon-wrapper">
+          <i id="openMenuIcon" class="fa-solid fa-bars open-menu-icon" onclick="openNavbar()"></i>
+          <i id="closeMenuIcon" class="fa-solid fa-xmark close-menu-icon" onclick="closeNavbar()"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =================== Spacing for Header =================== -->
+
+    <div class="navbar-spacing"></div>
+
+    <!-- =================== Header =================== -->
+
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h3>Primary & Secondary School</h3>
+            <h1>KOLHAN MODEL PUBLIC SCHOOL</h1>
+            <h3>(Co-ed 10+2 English Medium School) <br/>- A Unit of KECS, Reg No: 154/2023 - </h3>
+            <p style=" font-size: 1.2rem; font-weight: 400; line-height: 26px; text-align: justify;">
+              Kolhan Model Public School which is going to be established this year 2024
+              under the directorship of …………………., This School is primarily focused to give
+              quality education to our young stydents of our state Jharkhand, and empower
+              them with all the necessary requirements, so that they can develop themselves
+              in any field of career building….
+            </p>
+            <a class="button-primary" href="about.html">Learn More</a>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="header-image-wrapper">
+              <img src="images/bg.jpeg" />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="notification">
+              <h3>Notification</h3>
+              <p>
+                <i class="fa-solid fa-star-of-life" style="font-size: 0.6rem;">&nbsp; </i> <b>Teachers Required</b> - for Pre-primary and Primary classes
+                <a style="text-decoration: underline; color: rgb(239, 252, 168);" href="career.html">Click Here</a> for more details
+              </p>
+              <p>
+                <i class="fa-solid fa-star-of-life" style="font-size: 0.6rem;">&nbsp; </i> <b>Addmission notification</b>
+                <a style="text-decoration: underline; color: rgb(239, 252, 168);" href="career.html">Click Here</a> for more details
+              </p>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== Intro =================== -->
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <img src="images/bg.jpeg">
+          </div>
+          <div class="col-md-7 col-sm-12 pl-2 mb-4">
+            <h3 class="content-title mb-1">Intro about KMPS</h3>
+            <p class="content mb-2">
+              Kolhan Model Public School which is going to be established this year 2024 under the 
+              directorship of …………………., This School is primarily focused to give quality education
+              to our young stydents of our state Jharkhand, and empower them with all the necessary
+              requirements, so that they can develop themselves in any field of career building….
+            </p>
+            <h4 class="mb-1">Key Features</h4>
+            <ul class="mb-4">
+              <li><i class="fa fa-check" aria-hidden="true"></i> Library</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Computer Lab</li>
+              <li><i class="fa fa-check" aria-hidden="true"></i> Science Lab</li>
+            </ul>
+            <a class="btn-primary">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr"/>
+    <!-- =================== School Facilities =================== -->
+    <Section class="facilities">
+      <div class="container">
+
+        <!-- =================== School Facilities Title =================== -->
+        <div class="row">
+          <div class="col-sm-12 col-md-12 mb-2">
+            <h3 class="text-center">_________ Facilities _________</h3>
+            <h1 class="text-center mb-3">Our School Facilities</h1>
+          </div>
+        </div>
+
+        <div class="row gap-2 justify-center mb-4">
+
+          <!-- =================== Class Content 1 =================== -->
+          <div class="col-sm-12 col-md-3">
+            <div class="box">
+              <img  class="box-image" src="images/home/img1.jpg"/>
+              <h3 class="box-title">Library</h3>
+              <p class="box-content mb-2">
+                Our school is equippped by well maintained Library and it has som of the best and modern class books
+                so that these books can be very helpful in their studies.
+              </p>
+              <a class="box-btn">Learn More</a>
+            </div>
+          </div>
+
+          <!-- =================== Class Content 2 =================== -->
+          <div class="col-sm-12 col-md-3">
+            <div class="box">
+              <img  class="box-image" src="images/home/img2.jpg"/>
+              <h3 class="box-title">computer Lab</h3>
+              <p class="box-content mb-2">
+                In this modern world our students will be provided with hi tech compoter lab 
+                and this lab also has some of the best tutors who can guide students in their learning career.
+              </p>
+              <a class="box-btn">Learn More</a>
+            </div>
+          </div>
+
+          <!-- =================== Class Content 3 =================== -->
+          <div class="col-sm-12 col-md-3">
+            <div class="box">
+              <img  class="box-image" src="images/home/img3.jpg"/>
+              <h3 class="box-title">Science Lab</h3>
+              <p class="box-content mb-2">
+                Our School has Science Labs for every stream such as Physics Lab, Chemistry Lab, Bio Lab
+                and are well equipped with sufficient amount of tools which can help them understand Science
+                and technology very easily.
+              </p>
+              <a class="box-btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <hr class="hr"/>
+    <!-- =================== School Teachers =================== -->
+<!-- 
+    <Section class="teachers pt-4">
+      <div class="container">
+
+        <!-- =================== School Teachers Title ===================
+        <div class="row" >
+          <div class="col-sm-12 col-md-12 mb-2">
+            <h3 class="text-center">_________ Teachers _________</h3>
+            <h1 class="text-center mb-3">Our School Teachers</h1>
+          </div>
+        </div>
+
+        <div class="row gap-2 justify-center mb-4">
+
+          <!-- =================== Teachers Content 1 ===================
+          <div class="col-sm-12 col-md-3">
+            <div class="circle-container mx-auto">
+              <img  class="circle-image" src="images/team/team_1.jpeg">
+            </div>
+            <div>
+              <h3 class="box-title text-center mt-2 mb-1">School Teacher 1</h3>
+              <p class="box-content mb-2 text-center mx-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================== Teachers Content 2 ===================
+          <div class="col-sm-12 col-md-3">
+            <div class="circle-container mx-auto">
+              <img  class="circle-image" src="images/team/team_2.jpeg"/>
+            </div>
+            <div>
+              <h3 class="box-title text-center mt-2 mb-1">School Teacher 2</h3>
+              <p class="box-content mb-2 text-center mx-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================== Teachers Content 3 ===================
+
+          <div class="col-sm-12 col-md-3">
+            <div class="circle-container mx-auto">
+              <img  class="circle-image" src="images/team/team_3.jpeg"/>
+            </div>
+            <div>
+              <h3 class="box-title text-center mt-2 mb-1">School Teacher 3</h3>
+              <p class="box-content mb-2 text-center mx-3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+     -->
+    <footer class="footer1 bg-primary-dark-8 text-primary-light-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h3>KMPS</h3>
+            <p>
+              Kolhan Model Public School which is going to be established this year 2024
+              under the directorship of …………………., This School is primarily focused to give
+              quality education to our young stydents of our state Jharkhand, and empower
+              them with all the necessary requirements, so that they can develop themselves
+              in any field of career building….
+            </p>
+            <br/>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>Home</li>
+              <li>Gallery</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+            </ul>
+            <br/>
+          </div>
+          <div class="col-md-2 col-sm-12">
+            <h3>Social Links</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Tweeter</li>
+              <li>LinkedIn</li>
+            </ul>
+            <br/>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.0629337832765!2d86.21453097465135!3d22.8001318245938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e2e2c01d5049%3A0x224bb9bf64952f91!2sManoj%20IT%20Works!5e0!3m2!1sen!2sin!4v1703091826117!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer2 bg-primary-dark-9 text-primary-light-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            Copyright 2023 @ All Rights reserved | <span style="font-style:italic;">Designed by  </span>
+            <a style="color: rgb(255, 255, 152)" href="https://www.ufocube.com"><span style="font-weight: bold;"> - UFO</span>Cube</a></div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function openNavbar() {
+            var navbarMenu = document.getElementById("navbarMenu");
+            var openMenu = document.getElementById("openMenuIcon");
+            var closeMenu = document.getElementById("closeMenuIcon");
+            return (
+              // openMenu.classList.add("clicked"),
+              // closeMenu.classList.remove("clicked"),
+              navbarMenu.style.left = "0px",
+              closeMenu.style.display = "block",
+              openMenu.style.display = "none"
+            )
+        }
+
+        function closeNavbar() {
+            var navbarMenu = document.getElementById("navbarMenu");
+            var openMenu = document.getElementById("openMenuIcon");
+            var closeMenu = document.getElementById("closeMenuIcon");
+            return (
+              // openMenu.classList.remove("clicked"),
+              // closeMenu.classList.add("clicked"),
+              navbarMenu.style.left = "-250px",
+              openMenu.style.display = "block",
+              closeMenu.style.display = "none"
+            )
+        }
+
+        document.addEventListener('click', function(event) {
+          var openMenu = document.getElementById("openMenuIcon");
+            var closeMenu = document.getElementById("closeMenuIcon");
+          var isClickInsideNavbar = navbarMenu.contains(event.target) || openMenu.contains(event.target);
+          var screenWidth = window.innerWidth;
+
+          if (!isClickInsideNavbar && screenWidth <= 720) {
+            return (
+              navbarMenu.style.left = "-250px",
+              openMenu.style.display = "block",
+              closeMenu.style.display = "none"
+            )
+          }
+        });
+        
+        // document.addEventListener("click", function (event) {
+        //     var navbarMenu = document.getElementById("navbarMenu");
+        //     if (event.target.closest("#navbarMenu") === null && navbarMenu.style.left === "0px") {
+        //     navbarMenu.style.left = "-250px";
+        //     }
+        // });
+    </script>
+
+    <!-- ========================= Modal Script ========================= -->
+
+    <!-- <script>
+      // Check if the modal has been shown before
+      const modalShownBefore = sessionStorage.getItem('modalShownBefore');
+
+      // Function to show the modal
+      function showModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'flex';
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById('modal');
+        const modalBox = document.querySelector('.modal-box');
+        modal.style.display = 'none';
+
+        if (!modalBox.contains(event.target)) {
+          modal.style.display = 'none';
+
+          // Set a flag in sessionStorage to indicate that the modal has been shown in the current session
+          sessionStorage.setItem('modalShownBefore', true);
+        }
+      }
+
+      function stopPropagation(event) {
+        event.stopPropagation();
+      }
+
+      // Show the modal only if it hasn't been shown before
+      if (!modalShownBefore) {
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', showModal);
+      }
+    </script> -->
+
+    <script>
+      // Check if the modal has been shown before
+      const modalShownBefore = sessionStorage.getItem('modalShownBefore');
+  
+      // Function to show the modal
+      function showModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'flex';
+      }
+  
+      // Function to close the modal
+      function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none';
+  
+        // Set a flag in sessionStorage to indicate that the modal has been shown in the current session
+        sessionStorage.setItem('modalShownBefore', true);
+      }
+  
+      function stopPropagation(event) {
+        event.stopPropagation();
+      }
+  
+      // Show the modal only if it hasn't been shown before
+      if (!modalShownBefore) {
+        // Wait for the DOM to fully load
+        document.addEventListener('DOMContentLoaded', showModal);
+      }
+    </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      transition: 0.5s;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      padding: 10px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .menu-btn {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .content {
+      margin-left: 250px;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar" id="navbar">
+  <div class="menu-btn" onclick="toggleNavbar()">☰ Menu</div>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="content">
+  <h2>Your Content Goes Here</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</div>
+
+<script>
+  function toggleNavbar() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.style.left === "0px") {
+      navbar.style.left = "-250px";
+    } else {
+      navbar.style.left = "0px";
+    }
+  }
+
+  // Close navbar on body click
+  document.addEventListener("click", function (event) {
+    var navbar = document.getElementById("navbar");
+    if (event.target.closest("#navbar") === null && navbar.style.left === "0px") {
+      navbar.style.left = "-250px";
+    }
+  });
+</script>
+
+</body>
+</html> -->

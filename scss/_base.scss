@@ -1,0 +1,252 @@
+// .row, .navbar, .logo-wrapper, .navbar-menu-wrapper {
+//     display: block;
+// }
+
+.navbar {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: map-get($colors, "primary");
+    padding: 1rem 2rem;
+    position: fixed;
+    box-shadow: 0px 8px 8px rgba(22, 22, 22, 0.4);
+
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+
+        .logo-image {
+            width: 48px;
+            margin-right: 0.7rem;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 0.1rem;
+        }
+
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 0.15rem;
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        #navbarMenu {
+            display: block;
+            position: fixed;
+            top: 70px;
+            left: -250px;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 200;
+            color: #fff;
+            gap: 1rem;
+            // background-color: map-get($colors, "primary");
+            height: 100%;
+            width: 200px;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+            transition: 0.5s;
+            a.active {
+                color: map-get($colors, 'info');
+            }
+
+            @include md {
+                display: flex;
+                width: 100%;
+                height: 40px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                align-items: center;
+                gap: 1rem;
+                background-color: transparent;
+                padding: 1rem 2rem;
+                box-sizing: border-box;
+            }
+        }
+
+        .navbar-menu-icon-wrapper {
+            position: relative;
+            .open-menu-icon {
+                color: #fff;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+            .close-menu-icon {
+                display: none;
+                color: #fff;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+        
+            @include md {
+                display : none;
+            }
+        }
+
+    }
+}
+
+.navbar-spacing {
+    height: 64px;
+}
+
+.button-primary {
+    display: block;
+    width: 30%;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+    background-color: map-get($colors, "info");
+    color: map-get($colors, "primary" );
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.main-title {
+    font-size: 2rem;
+}
+
+.content-title {
+    font-size: 2rem;
+    color: $primary;
+
+    @include xs {
+        margin-top: 2rem;
+    }
+
+    @include sm {
+        margin-top: 2rem;
+    }
+}
+
+.content {
+    font-size: 1rem;
+}
+
+.header, .contact-header {
+    color: #fff;
+    padding-bottom: 1.4rem;
+    background-image: linear-gradient(rgba(16, 153, 123, 0.9), rgba(20, 105, 91, 1)), url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+   @include md{
+        .header-image-wrapper{
+            margin-top: 3em;
+        }
+   }
+
+   h1{
+        color: map-get($colors, "info");
+    }
+
+    h1, h3, p{
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 24px;
+        padding: 1rem 2rem;
+    }
+
+    .header-image-wrapper {
+        border: 5px solid #fff;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 3rem;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+        display: flex; // Use flexbox to center vertically
+        justify-content: center;
+        align-items: center; // Center vertically using flexbox
+
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+.intro {
+    padding-top: 4rem;
+    padding-bottom: 4.6rem;
+}
+
+.classes, .facilities {
+    display: flex;
+    color: #003626;
+    flex-direction: column;
+    padding-bottom: 1.4rem;
+    justify-content: flex-start;
+    padding: 2%;
+
+    h1, h3, p{
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-weight: 300;
+        line-height: 24px;
+        padding: 1rem 2rem;
+    }
+
+    .header-image-wrapper {
+        border: 5px solid #fff;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 6px;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6);
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
+
+.footer1 {
+    padding: 2rem 1rem;
+    background-color: map-get($colors, "bg-primary-dark-8");
+}
+
+.footer2 {
+    padding: 1.4rem 1rem;
+    background-color: map-get($colors, "bg-primary-dark-9");
+}

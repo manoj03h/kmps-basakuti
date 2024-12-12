@@ -1,0 +1,49 @@
+$primary: #003a2d;
+$secondary: #10997be6;
+$default: #d4d4d4;
+$info: #fcf37e;
+$warning: #ec7514;
+$danger: #b11e19;
+
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "default": $default,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger
+);
+
+@each $key, $val in $colors {
+    .txt-#{$key} {
+        color: $val;
+    }
+
+    .bg-#{$key} {
+        background-color: $val;
+    }
+
+    .btn-#{$key} {
+        background-color: $val;
+    }
+
+    @for $i from 1 through 9 {
+        .text-#{$key}-light-#{$i} {
+            color: mix(white, $val, $i * 10%);
+        }
+    
+        .bg-#{$key}-light-#{$i} {
+            background-color: mix(white, $val, $i * 10%);
+        }
+    }
+
+    @for $i from 1 through 9 {
+        .text-#{$key}-dark-#{$i} {
+            color: mix(#000, $val, $i * 10%);
+        }
+    
+        .bg-#{$key}-dark-#{$i} {
+            background-color: mix(#000, $val, $i * 10%);
+        }
+    }
+}
