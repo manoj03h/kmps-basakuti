@@ -77,12 +77,12 @@ $col: 12;
 }
 @for $i from 1 through $col {
     .px-#{$i} {
-        padding-bottom: 0 ($i * 1rem);
+        padding: 0 ($i * 1rem);
     }
 }
 @for $i from 1 through $col {
     .py-#{$i} {
-        padding-bottom: ($i * 1rem) 0;
+        padding: ($i * 1rem) 0;
     }
 }
 

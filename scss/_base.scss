@@ -192,7 +192,15 @@
     }
 }
 
-.intro {
+.intro, .notice {
+    background-color: #fff;
+}
+
+.facilities {
+    background-color: #eeeeee;
+}
+
+.intro, .notice {
     padding-top: 4rem;
     padding-bottom: 4.6rem;
 }

@@ -29,6 +29,8 @@
     }
 }
 
+
+
 .card {
     display: block;
     padding: 1rem;
@@ -77,6 +79,13 @@
         }
     }
 
+}
+
+.list-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .circle-container {
