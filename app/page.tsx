@@ -187,7 +187,7 @@ export default function Home() {
                     >
                       <Image
                         className='object-contain w-full mb-8'
-                        src="/images/latestNews/AdmissionOpen.jpeg"
+                        src="/images/latestNews/admissionOpen.jpeg"
                         alt="Holiday List"
                         width={600}
                         height={300}
