@@ -52,37 +52,37 @@ export default function Home() {
     },
   ]
 
-  const maxLength = 150;
+  // const maxLength = 150;
 
-    const latestNewsContent = latestNews.map((news, index) => (
-      <div key={index} className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[40%]">
-        <h3 className="text-2xl font-bold mb-8 text-red-800">
-          {news.title}
-        </h3>
-          <p className="mb-10">
-            {news.description.length <= maxLength
-              ? news.description
-              : `${news.description.slice(0, maxLength)}...`}
-          </p>
+    // const latestNewsContent = latestNews.map((news, index) => (
+    //   <div key={index} className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[40%]">
+    //     <h3 className="text-2xl font-bold mb-8 text-red-800">
+    //       {news.title}
+    //     </h3>
+    //       <p className="mb-10">
+    //         {news.description.length <= maxLength
+    //           ? news.description
+    //           : `${news.description.slice(0, maxLength)}...`}
+    //       </p>
           
-          <a
-            className="bg-red-800 px-8 md:px-10 lg:px-8 xl:px-20 py-4 rounded-md text-white mt-8 text-sm md:text-md lg:text-lg hover:bg-red-900"
-            href={news.link}
-          >
-            Read More
-          </a>
+    //       <a
+    //         className="bg-red-800 px-8 md:px-10 lg:px-8 xl:px-20 py-4 rounded-md text-white mt-8 text-sm md:text-md lg:text-lg hover:bg-red-900"
+    //         href={news.link}
+    //       >
+    //         Read More
+    //       </a>
           
-          <a
-            className="bg-red-800 px-8 md:px-10 lg:px-8 xl:px-20 py-4 rounded-md text-white mt-8 text-sm md:text-md lg:text-lg hover:bg-red-900"
-            href={news.link}
-          >
-            Read More
-          </a>
+    //       <a
+    //         className="bg-red-800 px-8 md:px-10 lg:px-8 xl:px-20 py-4 rounded-md text-white mt-8 text-sm md:text-md lg:text-lg hover:bg-red-900"
+    //         href={news.link}
+    //       >
+    //         Read More
+    //       </a>
           
         
-        {/* <p className="text-lg mb-8">{news.description}</p> */}
-      </div>
-    ));
+    //     {/* <p className="text-lg mb-8">{news.description}</p> */}
+    //   </div>
+    // ));
 
     const galleryContent = gallery.map((item, index) => (
       <div key={index} className="w-full border-2 border-white rounded-md text-center md:w-[40%] lg:w-[20%]">

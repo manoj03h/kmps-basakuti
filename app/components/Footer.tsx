@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -10,12 +11,12 @@ const Footer = () => {
               <hr />
             </p>
             <ul>
-              <li className='relative z-30 h-full'><a className='relative z-30 grid place-items-center h-full p-2 hover:bg-green-950' href="/">Home</a></li>
-              <li><a className="block px-8 py-2 hover:text-yellow-500" href="/LatestNews">Latest News</a></li>
-              <li><a className="block px-8 py-2 hover:text-yellow-500" href="/gallery">Gallery</a></li>
-              <li><a className="block px-8 py-2 hover:text-yellow-500" href="/career">Career</a></li>
-              <li><a className="block px-8 py-2 hover:text-yellow-500" href="/about">About Us</a></li>
-              <li><a className="block px-8 py-2 hover:text-yellow-500" href="/contact">Contact Us</a></li>
+              <li className='relative z-30 h-full'><Link className='relative z-30 grid place-items-center h-full p-2 hover:bg-green-950' href="/">Home</Link></li>
+              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/LatestNews">Latest News</Link></li>
+              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/gallery">Gallery</Link></li>
+              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/career">Career</Link></li>
+              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/about">About Us</Link></li>
+              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/contact">Contact Us</Link></li>
             </ul>
           </div>
 
