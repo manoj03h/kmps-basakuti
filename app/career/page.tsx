@@ -1,45 +1,19 @@
 'use client'
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 
 const Career = () => {
 
-  const latestNews = [
-    {
-      title: "नई शिक्षा नीति को मिली, केन्द्रीय कैबिनेट की मंजूरी।",
-      description: "Kolhan Model Public School which is going to be established this year 2024 under the directorship of …………………., This School is primarily focused to give quality education",
-      link: "/latestNews/1",
-      image: ""
-    },
-    {
-      title: "नई शिक्षा नीति को मिली, केन्द्रीय कैबिनेट की मंजूरी।",
-      description: "Kolhan Model Public School which is going to be established this year 2024 under the directorship of …………………., This School is primarily focused to give quality education",
-      link: "/latestNews/2"
-    },
-    {
-      title: "नई शिक्षा नीति को मिली, केन्द्रीय कैबिनेट की मंजूरी।",
-      description: "Kolhan Model Public School which is going to be established this year 2024 under the directorship of …………………., This School is primarily focused to give quality education",
-      link: "/latestNews/3"
-    },
-    {
-      title: "नई शिक्षा नीति को मिली, केन्द्रीय कैबिनेट की मंजूरी।",
-      description: "Kolhan Model Public School which is going to be established this year 2024 under the directorship of …………………., This School is primarily focused to give quality education",
-      link: "/latestNews/4"
-    },
-  ]
-
-  const latestNewsContent = latestNews.map((news, index) => (
-    <div key={index} className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[40%]">
-      <h3 className="text-2xl font-bold mb-8 text-red-800">
-        {news.title}
-      </h3>
-        <p className="mb-10">
-          {news.description}
-        </p>
-      {/* <p className="text-lg mb-8">{news.description}</p> */}
-    </div>
-  ));
+  // const latestNewsContent = latestNews.map((news, index) => (
+  //   <div key={index} className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[40%]">
+  //     <h3 className="text-2xl font-bold mb-8 text-red-800">
+  //       {news.title}
+  //     </h3>
+  //       <p className="mb-10">
+  //         {news.description}
+  //       </p>
+  //     {/* <p className="text-lg mb-8">{news.description}</p> */}
+  //   </div>
+  // ));
 
   return (
     <section className="relative flex flex-col justify-center items-center">

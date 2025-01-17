@@ -34,17 +34,17 @@ const page = () => {
     },
   ]
 
-  const latestNewsContent = latestNews.map((news, index) => (
-    <div key={index} className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[40%]">
-      <h3 className="text-2xl font-bold mb-8 text-red-800">
-        {news.title}
-      </h3>
-        <p className="mb-10">
-          {news.description}
-        </p>
-      {/* <p className="text-lg mb-8">{news.description}</p> */}
-    </div>
-  ));
+  // const latestNewsContent = latestNews.map((news, index) => (
+  //   <div key={index} className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[40%]">
+  //     <h3 className="text-2xl font-bold mb-8 text-red-800">
+  //       {news.title}
+  //     </h3>
+  //       <p className="mb-10">
+  //         {news.description}
+  //       </p>
+  //     {/* <p className="text-lg mb-8">{news.description}</p> */}
+  //   </div>
+  // ));
 
   return (
     <section className="relative flex flex-col justify-center items-start">
@@ -268,7 +268,7 @@ const page = () => {
     </div>
   </div>
   {latestNews.map((news, index) => (
-  <div className="relative flex gap-2 justify-center bg-slate-50 py-16">
+  <div key={index} className="relative flex gap-2 justify-center bg-slate-50 py-16">
     <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center h-full px-20 md:flex-row md:items-center">
       <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[80%]">
           
