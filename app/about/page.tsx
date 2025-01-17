@@ -28,27 +28,27 @@ const About = () => {
                             Quality Education to Students
                         </h3>
                         <p className="text-lg lg:text-sm xl:text-lg mb-8">
-                            KMPS will provide a quality education that meets standard curriculum requirements while incorporating elements of tribal knowledge and wisdom. This includes developing culturally relevant teaching materials and pedagogies that resonate with students.
+                         KMPS provides a quality education that meets standard curriculum requirements while incorporating elements of tribal knowledge and wisdom. This includes developing culturally relevant teaching materials and pedagogies that resonate with students.
                         </p>
 
                         <h3 className="text-2xl lg:text-lg xl:text-2xl font-bold mb-8">
                             Holistic Development of Students
                         </h3>
                         <p className="text-lg lg:text-sm xl:text-lg mb-8">
-                            KMPS provides a well-rounded education that focuses not only on academic excellence but also on the holistic development of students, including physical fitness, emotional well-being, and character development.
+                        KMPS provides a well-rounded education that focuses not only on academic excellence but also on the holistic development of students, including physical fitness, emotional well-being, and character development.
                         </p>
 
                         <h3 className="text-2xl lg:text-lg xl:text-2xl font-bold mb-8">
                             Language preservation
                         </h3>
                         <p className="text-lg lg:text-sm xl:text-lg mb-8">
-                            KMPS will promote the use and preservation of tribal languages alongside the official language, fostering pride in linguistic heritage and facilitating communication within the community.
+                        KMPS promotes the use and preservation of tribal languages alongside the official language, fostering pride in linguistic heritage and facilitating communication within the community.
                         </p>
                         <h3 className="text-2xl lg:text-lg xl:text-2xl font-bold mb-8">
                             Cultural Connection & Preservation of Cultural Identity
                         </h3>
                         <p className="text-lg lg:text-sm xl:text-lg mb-8">
-                            KMPS will preserves and promotes the rich cultural heritage of tribal communities by incorporating traditional art, language, and customs into the curriculum. Integrate tribal values, traditions, and practices into the school curriculum and activities, allowing students to connect with their cultural roots and develop a strong sense of identity. To provide opportunities to students for extra-curricular activities moving towards Centre of Excellence in sports etc. To help students to acquire skills particularly those oriented to employment including self-employment. To strive to achieve best academic standards, excellence in sports and extra-curricular activities
+                        KMPS preserves and promotes the rich cultural heritage of tribal communities by incorporating traditional art, language, and customs into the curriculum. Integrate tribal values, traditions, and practices into the school curriculum and activities, allowing students to connect with their cultural roots and develop a strong sense of identity. To provide opportunities to students for extra-curricular activities moving towards Centre of Excellence in sports etc. To help students acquire skills particularly those oriented to employment including self-employment. To strive to achieve the best academic standards, and excellence in sports and extra-curricular activities.
                         </p>
                     </div>
                 </div>

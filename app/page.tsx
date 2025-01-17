@@ -16,16 +16,16 @@ export default function Home() {
       description: "23 दिसम्बर  का PTM  meeting  का विडिओ  KMPS  के हमारे बच्चों  की प्रगति बहुत सराहनीय  है,  जो निश्चित ही प्राचार्य श्री राजेन्द्र बोदरा जी,  श्री योगेन्द्र मुंडरी  जी , शिक्षिकाएँ और स्कूल स्टाफ के मेहनत का नतीजा .....",
       link: "/LatestNews"
     },
-    {
-      title: "",
-      description: "अशिक्षा की वजह से हमारे गांवों की जनसंख्या घट रही है, कोरोना वायरस की वजह से एक मौत नहीं हुई, मगर मलेरिया, दस्त, तपेदिक की वजह से मौतें ज्यादा होती हैं । जब वो अस्पताल जाते तो communication नहीं कर पाते,उनकी मौत की वजह गलत इलाज होती है। .....",
-      link: "/LatestNews"
-    },
-    {
-      title: "",
-      description: "आदिवासी समाज को स्वस्थ, शिक्षित, और सांस्कृतिक रूप से संपन्न होना चाहिए। इसके लिए निम्नलिखित बिंदुओं पर ध्यान दिया जाना चाहिए : शिक्षा : सभी बच्चों को गुणवत्तापूर्ण शिक्षा मिलनी चाहिए ताकि वे अपने भविष्य को संवार सकें और समाज को प्रगति पर ले जा सकें। स्वास्थ्य .....",
-      link: "/LatestNews"
-    },
+    // {
+    //   title: "",
+    //   description: "अशिक्षा की वजह से हमारे गांवों की जनसंख्या घट रही है, कोरोना वायरस की वजह से एक मौत नहीं हुई, मगर मलेरिया, दस्त, तपेदिक की वजह से मौतें ज्यादा होती हैं । जब वो अस्पताल जाते तो communication नहीं कर पाते,उनकी मौत की वजह गलत इलाज होती है। .....",
+    //   link: "/LatestNews"
+    // },
+    // {
+    //   title: "",
+    //   description: "आदिवासी समाज को स्वस्थ, शिक्षित, और सांस्कृतिक रूप से संपन्न होना चाहिए। इसके लिए निम्नलिखित बिंदुओं पर ध्यान दिया जाना चाहिए : शिक्षा : सभी बच्चों को गुणवत्तापूर्ण शिक्षा मिलनी चाहिए ताकि वे अपने भविष्य को संवार सकें और समाज को प्रगति पर ले जा सकें। स्वास्थ्य .....",
+    //   link: "/LatestNews"
+    // },
     {
       title: "",
       description: "In continuation to it and experiencing the turbulence of Teachers and other KMPS staff availability, let us invite applications for Teachers, Nurse,Security guards and Cooks for conducting selection interview in the month of January after 20th,2025 so that we are empowered .....",
@@ -144,7 +144,11 @@ export default function Home() {
                   </h2>
                   <h3 className="text-2xl lg:text-lg xl:text-2xl font-bold mb-8">(Co-ed 10+2 English Medium School)
                   - A Unit of KECS, Reg No: 154/2023 -</h3>
-                  <p className="text-lg lg:text-sm xl:text-lg mb-8">Kolhan Model Public School which is going to be established this year 2024 under the directorship of …………………., This School is primarily focused to give quality education to our young stydents of our state Jharkhand, and empower them with all the necessary requirements, so that they can develop themselves in any field of career building….</p>
+                  <p className="text-lg lg:text-sm xl:text-lg mb-8">Kolhan Model Public School (KMPS) is a co-educational English-medium institution established in 2024 in Basakuti, Khutpani, Jharkhand. KMPS was inaugurated on April 1, 2024, in a ceremony attended by numerous intellectuals from the Ho community, marking a significant step toward educational advancement in the region. KMPS is a Kolhan Education and Charitable Society (KECS) unit, registered under Reg No: 154/2023. 
+The school aims to provide a quality education that aligns with standard curriculum requirements while integrating elements of tribal knowledge and wisdom. 
+The institution is dedicated to empowering young students from Jharkhand, particularly those from the Ho and Munda tribes, by offering comprehensive educational opportunities. 
+The school's facilities include a library, computer lab, and science lab, providing students with essential resources for their academic development. 
+</p>
                   <div className="mb-16 lg:mb-8 xl:mb-16">
                     <table>
                       <thead>

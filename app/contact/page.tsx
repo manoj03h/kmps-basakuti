@@ -13,10 +13,10 @@ const Contact = () => {
                     <h2 className='text-3xl font-black text-slate-600'>School Location</h2>
                     <br/>
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14712.252255899251!2d86.217106!3d22.800127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e2e2c01d5049%3A0x224bb9bf64952f91!2sManoj%20IT%20Works!5e0!3m2!1sen!2sin!4v1704914799908!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.562875268067!2d85.72278048558394!3d22.632792977787457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f587000b7f0d27%3A0x8fa67e55e7545815!2sKolhan%20Model%20Public%20school!5e0!3m2!1sen!2sin!4v1737142871645!5m2!1sen!2sin" 
                         width="100%"
-                        height="300"
-                        // allowFullScreen=""
+                        height="450"
+                        allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -28,12 +28,11 @@ const Contact = () => {
                         <tr className='flex'>
                             <th className='text-xl text-left pr-4'>Contact Us: </th>
                             <td className=''>
-                                (+91)-987654321,
+                                +91 7488363377 <b>(<i>Shri Rajendra Bodra</i> - Principal)</b>,
                                 <br/>
-                                (+91)-987654321,
+                                +91 9123447818 <b>(<i>Shri Yogendra Mundri</i> - Secretary)</b>,
                                 <br/>
-                                (+91)-987654321</td>
-                            <td></td>
+                            </td>
                         </tr>
                         <tr className='flex mt-4'>
                             <th className='text-xl text-left pr-16'>Email: </th>
