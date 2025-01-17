@@ -106,7 +106,7 @@ const page = () => {
               <div>
                 <Image
                   className='object-contain w-full'
-                  src="/images/latestNews/AdmissionOpen.jpeg"
+                  src="/images/latestNews/admissionOpen.jpeg"
                   alt="Holiday List"
                   width={600}
                   height={300}
