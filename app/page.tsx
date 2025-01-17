@@ -144,11 +144,11 @@ export default function Home() {
                   </h2>
                   <h3 className="text-2xl lg:text-lg xl:text-2xl font-bold mb-8">(Co-ed 10+2 English Medium School)
                   - A Unit of KECS, Reg No: 154/2023 -</h3>
-                  <p className="text-lg lg:text-sm xl:text-lg mb-8">Kolhan Model Public School (KMPS) is a co-educational English-medium institution established in 2024 in Basakuti, Khutpani, Jharkhand. KMPS was inaugurated on April 1, 2024, in a ceremony attended by numerous intellectuals from the Ho community, marking a significant step toward educational advancement in the region. KMPS is a Kolhan Education and Charitable Society (KECS) unit, registered under Reg No: 154/2023. 
-The school aims to provide a quality education that aligns with standard curriculum requirements while integrating elements of tribal knowledge and wisdom. 
-The institution is dedicated to empowering young students from Jharkhand, particularly those from the Ho and Munda tribes, by offering comprehensive educational opportunities. 
-The school's facilities include a library, computer lab, and science lab, providing students with essential resources for their academic development. 
-</p>
+                  <p 
+                    className="text-lg lg:text-sm xl:text-lg mb-8"
+                  >
+                    {"Kolhan Model Public School (KMPS) is a co-educational English-medium institution established in 2024 in Basakuti, Khutpani, Jharkhand. KMPS was inaugurated on April 1, 2024, in a ceremony attended by numerous intellectuals from the Ho community, marking a significant step toward educational advancement in the region. KMPS is a Kolhan Education and Charitable Society (KECS) unit, registered under Reg No: 154/2023. The school aims to provide a quality education that aligns with standard curriculum requirements while integrating elements of tribal knowledge and wisdom. The institution is dedicated to empowering young students from Jharkhand, particularly those from the Ho and Munda tribes, by offering comprehensive educational opportunities. The school's facilities include a library, computer lab, and science lab, providing students with essential resources for their academic development. "}
+                  </p>
                   <div className="mb-16 lg:mb-8 xl:mb-16">
                     <table>
                       <thead>

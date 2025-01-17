@@ -48,11 +48,11 @@ school community. The available positions are:
                                 <dd>
                                     <ol className='pl-8'>
                                         <li className='pl-2 list-disc'>
-                                            Bachelor's or Master's degree.
+                                            {"Bachelor's or Master's degree."}
                                         </li>
 
                                         <li className='pl-2 list-disc'>
-                                            B.Ed. (Bachelor of Education) is mandatory.
+                                            {"B.Ed. (Bachelor of Education) is mandatory."}
                                         </li>
 
                                         <li className='pl-2 list-disc'>
@@ -105,7 +105,7 @@ school community. The available positions are:
                                 <dd>
                                     <ol className='pl-8'>
                                         <li className='pl-2 list-disc'>
-                                            Qualifications:
+                                                {"Qualifications:"}
                                             <ol>
                                                 <li className='pl-2 list-decimal'>
                                                     Prior experience in security roles, especially in an educational institution.
@@ -114,7 +114,7 @@ school community. The available positions are:
                                         </li>
 
                                         <li className='pl-2 list-disc'>
-                                            Responsibilities: 
+                                            {"Responsibilities: "}
                                             <ol>
                                                 <li className='pl-2 list-decimal'>
                                                     Ensure the safety and security of the school premises.
