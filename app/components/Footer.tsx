@@ -13,6 +13,8 @@ const Footer = () => {
             <ul>
               <li><Link className='block px-8 py-2 hover:text-yellow-500' href="/">Home</Link></li>
               <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/LatestNews">Latest News</Link></li>
+              <li><Link className='block px-8 py-2 hover:text-yellow-500' href="/articles">Articles</Link></li>
+              <li><Link className='block px-8 py-2 hover:text-yellow-500' href="/academics">{"Academic's"}</Link></li>
               <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/gallery">Gallery</Link></li>
               <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/career">Career</Link></li>
               <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/about">About Us</Link></li>

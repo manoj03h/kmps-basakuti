@@ -49,8 +49,8 @@ const page = () => {
   return (
     <section className="relative flex flex-col justify-center items-start">
       <div className='grid place-content-center w-full h-[200px] bg-slate-300 mt-[80px]'>
-            <p className='text-6xl font-black text-slate-800'>Latest News</p>
-        </div>
+        <p className='text-6xl font-black text-slate-800'>Latest News</p>
+      </div>
     {/* <div className="relative flex flex-col justify-center items-center w-full h-full bg-white">
       
       <div className="relative flex gap-2 justify-center py-16">
@@ -98,28 +98,23 @@ const page = () => {
       </div>
     </div> */}
 
-<section className="relative flex flex-col justify-center items-start">
-
-<div className="relative flex gap-2 justify-center bg-slate-50 py-16 w-full">
-    <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center w-full h-full px-20 md:flex-row md:items-center">
-      <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[80%]">
-              <div>
-                <Image
-                  className='object-contain w-full'
-                  src="/images/latestNews/admissionOpen.jpeg"
-                  alt="Holiday List"
-                  width={600}
-                  height={300}
-                />
-              </div>
-            
+      <div className="relative flex gap-2 justify-center bg-slate-50 py-16 px-4 md:px-20 lg:px-48 w-full">
+        <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center w-full h-full px-0 md:flex-row md:items-center">
+          <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-10 py-10 text-center lg:w-[80%]">
+            <Image
+              className='object-contain w-full'
+              src="/images/latestNews/admissionOpen.jpeg"
+              alt="Holiday List"
+              width={600}
+              height={300}
+            />
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
   <div className="relative flex gap-2 justify-center bg-slate-50 py-16">
-    <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center h-full px-20 md:flex-row md:items-center">
-      <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[80%]">
+    <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center h-full px-8 md:px-20 md:flex-row md:items-center">
+      <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-4 md:px-20 py-10 text-center lg:w-[80%]">
         <h3 className="text-2xl font-bold mb-8 text-red-800">
           नई शिक्षा नीति को मिली, केन्द्रीय कैबिनेट की मंजूरी।
         </h3>
@@ -128,7 +123,7 @@ const page = () => {
           भारत सरकार द्वारा प्रस्तावित केन्द्रीय सरकार की कैबिनेट की स्वीकृति के बाद 36 साल बाद देश में नई शिक्षा नीति लागू हो गई । कैबिनेट ने नई शिक्षा नीति (New Education Policy 2023) को हरी झंडी दे दी है. 34 साल बाद शिक्षा नीति में बदलाव किया गया है. नई शिक्षा नीति की उल्लेखनीय बातें सरल तरीके की इस प्रकार हैं:
           </p>
 
-        <div className="flex gap-8 justify-center">
+        <div className="flex flex-wrap gap-4 justify-center">
                   <dl>
                     <dt><h3 className='text-xl font-bold text-slate-800 mb-3'>Five Years Fundamental</h3></dt>
                     <dd>
@@ -269,8 +264,8 @@ const page = () => {
   </div>
   {latestNews.map((news, index) => (
   <div key={index} className="relative flex gap-2 justify-center bg-slate-50 py-16">
-    <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center h-full px-20 md:flex-row md:items-center">
-      <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[80%]">
+    <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center h-full px-8 md:px-20 md:flex-row md:items-center">
+      <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-4 md:px-20 py-10 text-center lg:w-[80%]">
           
               <div>
                 <h3 className="text-2xl font-bold mb-8 text-red-800">
@@ -287,24 +282,6 @@ const page = () => {
     </div>
   </div>
   ))}
-</section>
-
-  <div className="relative flex gap-2 justify-center bg-slate-50 py-16 w-full">
-    <div className="relative flex flex-wrap gap-20 md:gap-32 lg:gap-14 justify-center items-center w-full h-full px-20 md:flex-row md:items-center">
-      <div className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[80%]">
-              <div>
-                <Image
-                  className='object-contain w-full'
-                  src="/images/latestNews/holidayList.jpeg"
-                  alt="Holiday List"
-                  width={600}
-                  height={300}
-                />
-              </div>
-            
-      </div>
-    </div>
-  </div>
 </section>
   )
 }

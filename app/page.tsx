@@ -54,20 +54,20 @@ export default function Home() {
   const gallery = [
     {
       name: "Image 1",
-      location: "/images/gallery/img1.jpg",
+      location: "/images/gallery/img1.jpeg",
     },
     {
       name: "Image 2",
-      location: "/images/gallery/img2.jpg",
+      location: "/images/gallery/img2.jpeg",
     },
     {
       name: "Image 3",
-      location: "/images/gallery/img3.jpg",
+      location: "/images/gallery/img3.jpeg",
     },
-    {
-      name: "Image 4",
-      location: "/images/gallery/img4.jpg",
-    },
+    // {
+    //   name: "Image 4",
+    //   location: "/images/gallery/img4.jpg",
+    // },
   ]
 
   // const maxLength = 150;
@@ -103,37 +103,42 @@ export default function Home() {
     // ));
 
       const handleHomeContent = homeContent.map((item, index) => (
-        <div key={index} className="w-full">
-          <Image 
-            className="object-contain w-full rounded-md"
-            alt={item.title}
-            src={item.image}
-            width={600}
-            height={300}
-          />
-          <h3 className="text-2xl font-bold my-8">
-            {item.title}
-          </h3>
-          <p className={`w-full transition-all duration-500 ease-in-out ${ isDescriptionOpen ? "h-auto" : "h-16 overflow-hidden" }`} >
-            {
-              item.description.length <= 50 || isDescriptionOpen
-                ? item.description
-                : item.description.slice(0, 50) + "... "
-            }
-          </p>
-          <button
-            className="bg-green-800 px-8 md:px-10 lg:px-8 xl:px-20 py-4 rounded-md text-white mt-8 text-sm md:text-md lg:text-lg hover:bg-green-900"
-            onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}
-          >
-            Know More
-          </button>
+        <div key={index} className="grid place-items-center w-full">
+          <div className="grid place-items-center">
+            <Image 
+              className="object-contain w-[300px] rounded-md md:w-[600px] md:p-8 lg:w-[800px]"
+              alt={item.title}
+              src={item.image}
+              width={600}
+              height={300}
+            />
+          </div>
+            <div className="grid place-items-center w-full h-full">
+            <h3 className="text-2xl font-bold my-8">
+              {item.title}
+            </h3>
+            <p className={`w-full px-0 transition-all duration-500 ease-in-out ${ isDescriptionOpen ? "h-auto" : "h-16 overflow-hidden" } md:px-10 lg:px-32`} >
+              {
+                item.description.length <= 100 || isDescriptionOpen
+                  ? item.description
+                  : item.description.slice(0, 100) + "... "
+              }
+            </p>
+            <button
+              className="bg-green-800 px-8 md:px-10 lg:px-8 xl:px-20 py-4 rounded-md text-white mt-8 text-sm md:text-md lg:text-lg hover:bg-green-900"
+              onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}
+            >
+              Know More
+            </button>
+          </div>
+          
         </div>
       ));
 
     
 
     const galleryContent = gallery.map((item, index) => (
-      <div key={index} className="w-full border-2 border-white rounded-md text-center md:w-[40%] lg:w-[20%]">
+      <div key={index} className="w-full border-2 border-white rounded-md text-center md:w-[40%] lg:w-[30%]">
         <Image 
           className="object-contain w-full rounded-md"
           alt={item.name}
@@ -238,7 +243,7 @@ export default function Home() {
           className="block px-20 w-full"
         >
           <div
-            className="block  border-2 border-red-500 w-full"
+            className="flex  flex-col items-center w-full"
           >
             <p>{ handleHomeContent }</p>
           </div>
@@ -262,7 +267,7 @@ export default function Home() {
                         Know More
                       </a>
                     </div>
-                    <div
+                    {/* <div
                       className="flex flex-col justify-center items-center bg-slate-50 rounded-sm px-6 py-8 text-center w-full lg:w-[600px] xl:w-[800px] h-full"
                     >
                       <Image
@@ -278,7 +283,7 @@ export default function Home() {
                       >
                         Know More
                       </a>
-                    </div>
+                    </div> */}
 
                     
         </div>
@@ -288,8 +293,8 @@ export default function Home() {
         {/* ============ Latest News Section ============ */}
 
       
-        <div className="relative flex gap-2 justify-center bg-slate-50 py-16">
-          <div className="relative flex gap-20 md:gap-32 lg:gap-14 justify-center items-center h-full px-20 py-10 md:flex-row">
+        <div className="relative flex gap-2 justify-center bg-slate-50 py-0">
+          <div className="relative flex gap-20 md:gap-32 lg:gap-14 justify-center items-center h-full px-0 md:px-20 py-10 md:flex-row">
 
             
 
@@ -305,7 +310,7 @@ export default function Home() {
                       {latestNews.map((news, index) => (
                       <div
                         key={index}
-                        className="flex flex-col justify-center items-center bg-slate-50 border-2 border-slate-500 rounded-sm px-6 py-8 text-center w-full md:w-[300px] h-full"
+                        className="flex flex-col justify-center items-center bg-slate-50 border-2 border-slate-500 rounded-sm px-6 py-8 text-center w-full md:w-[600px] h-full lg:w-[800px]"
                       >
                         <h3 className="text-2xl font-bold mb-4">{news.title}</h3>
                         <p className="text-lg mb-4">{news.description}</p>

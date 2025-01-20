@@ -10,11 +10,11 @@ const About = () => {
         </div>
         <div className="relative flex flex-col justify-center items-center w-full h-full bg-white">
             <div className="relative flex gap-2 justify-center py-16">
-                <div className="relative flex flex-col-reverse  flex-wrap gap-6 lg:gap-8 justify-center items-start h-full px-20 md:py-10 lg:flex-row md:items-center">
-                    <div className="grid place-items-center w-full h-full md:w-[60%] xl:w-[40%]">
+                <div className="relative flex flex-col  flex-wrap gap-6 lg:gap-8 justify-center items-start h-full px-20 md:py-10 md:items-center">
+                    <div className="grid place-items-center w-full h-full md:w-[90%] xl:w-full">
                         <Image
-                            className="object-contain w-[80%] h-[80%] lg:w-[80%] lg:h-[80%]"
-                            src="/images/team/team_img.jpg"
+                            className="object-contain w-full lg:w-full"
+                            src="/images/gallery/img3.jpeg"
                             alt="KMPS School Image"
                             width={500}
                             height={250}

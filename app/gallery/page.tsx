@@ -6,56 +6,20 @@ const Gallery = () => {
     const gallery = [
         {
           name: "Image 1",
-          location: "/images/gallery/img1.jpg",
+          location: "/images/gallery/img1.jpeg",
         },
         {
           name: "Image 2",
-          location: "/images/gallery/img2.jpg",
+          location: "/images/gallery/img2.jpeg",
         },
         {
           name: "Image 3",
-          location: "/images/gallery/img3.jpg",
-        },
-        {
-          name: "Image 4",
-          location: "/images/gallery/img4.jpg",
-        },
-        {
-          name: "Image 5",
-          location: "/images/gallery/img5.jpg",
-        },
-        {
-          name: "Image 6",
-          location: "/images/gallery/img6.jpg",
-        },
-        {
-          name: "Image 7",
-          location: "/images/gallery/img7.jpg",
-        },
-        {
-          name: "Image 8",
-          location: "/images/gallery/img8.jpg",
-        },
-        {
-          name: "Image 9",
-          location: "/images/gallery/img9.jpg",
-        },
-        {
-          name: "Image 10",
-          location: "/images/gallery/img10.jpg",
-        },
-        {
-          name: "Image 11",
-          location: "/images/gallery/img11.jpg",
-        },
-        {
-          name: "Image 12",
-          location: "/images/gallery/img12.jpg",
+          location: "/images/gallery/img3.jpeg",
         },
       ]
 
       const galleryContent = gallery.map((item, index) => (
-            <div key={index} className="w-full border-2 border-white rounded-md text-center md:w-[40%] lg:w-[20%]">
+            <div key={index} className="w-full border-2 border-white rounded-md text-center md:w-[40%] lg:w-[30%]">
               <Image 
                 className="object-contain w-full rounded-md"
                 alt={item.name}
@@ -83,7 +47,7 @@ const Gallery = () => {
             <div className="relative flex flex-wrap gap-10 md:gap-10 lg:gap-8 justify-center items-center h-full px-20 py-10 md:flex-row md:items-center">
             <div className="w-full">
                 {/* <p className="text-xl font-bold">Information abut School</p> */}
-                <h2 className="text-6xl font-black text-green-800">Gallery</h2>
+                <h2 className="mt-24 text-6xl font-black text-green-800">Gallery</h2>
             </div>
             {galleryContent}
             </div>
