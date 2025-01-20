@@ -42,7 +42,7 @@ const openMenu =  () => {
                     <li className='relative z-30 h-full'><Link className='relative z-30 grid place-items-center h-full p-2 hover:bg-green-950' href="/">Home</Link></li>
                     <li className='h-full'><Link className='grid place-items-center h-full p-2 hover:bg-green-950' href="/LatestNews">Latest News</Link></li>
                     <li className='h-full'><Link className='grid place-items-center h-full p-2 hover:bg-green-950' href="/LatestNews">Article</Link></li>
-                    <li className='h-full'><Link className='grid place-items-center h-full p-2 hover:bg-green-950' href="/LatestNews">Academic's</Link></li>
+                    <li className='h-full'><Link className='grid place-items-center h-full p-2 hover:bg-green-950' href="/LatestNews">{"Academic's"}</Link></li>
                     <li className='h-full'><Link className='grid place-items-center h-full p-2 hover:bg-green-950' href="/gallery">Gallery</Link></li>
                     <li className='h-full'><Link className='grid place-items-center h-full p-2 hover:bg-green-950' href="/career">Career</Link></li>
                     <li className='h-full'><Link className='grid place-items-center h-full p-2 hover:bg-green-950' href="/about">About Us</Link></li>
