@@ -1,25 +1,43 @@
+"use client"
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 const Footer = () => {
+  const navItems: {title: string; path: string}[] = [
+    { title: 'Home', path: '/' },
+    { title: 'Latest News', path: '/LatestNews' },
+    { title: 'Articles', path: '/articles' },
+    { title: 'Academic\'s', path: '/academics' },
+    { title: 'Career', path: '/career' },
+    { title: 'Gallery', path: '/gallery' },
+    { title: 'About', path: '/about' },
+    { title: 'Contact', path: '/contact' },
+  ];
+
+  const pathname = usePathname(); // Current route
+
+
+  const handleFooterNav = () => {
+    return (
+        <ul className="relative z-30 block px-0 py-0 h-full w-full md:flex md:flex-col md:gap-0 md:items-left md:justify-start">
+            {navItems.map((item, index) => (
+            
+            <li key={index}><Link className={`block px-8 py-1 hover:text-green-500 ${ pathname === item.path ? 'text-yellow-500' : 'hover:bg-green-500500'}`} href={item.path}>{item.title}</Link></li>
+            ))}
+        </ul>
+    );
+  }
+
   return (
     <div className='grid content-center text-white'>
         <section className='grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10 justify-center px-10 py-10 bg-slate-800'>
           <div className=''>
-            <p className='text-xl font-bold tracking-wide leading-relaxed mb-2'>
+            <p className='text-xl font-bold tracking-wide leading-relaxed mb-6'>
               Important Links
               <hr />
             </p>
-            <ul>
-              <li><Link className='block px-8 py-2 hover:text-yellow-500' href="/">Home</Link></li>
-              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/LatestNews">Latest News</Link></li>
-              <li><Link className='block px-8 py-2 hover:text-yellow-500' href="/articles">Articles</Link></li>
-              <li><Link className='block px-8 py-2 hover:text-yellow-500' href="/academics">{"Academic's"}</Link></li>
-              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/gallery">Gallery</Link></li>
-              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/career">Career</Link></li>
-              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/about">About Us</Link></li>
-              <li><Link className="block px-8 py-2 hover:text-yellow-500" href="/contact">Contact Us</Link></li>
-            </ul>
+            { handleFooterNav() }
           </div>
 
             <div className='min-w-[200px] max-w-[600px]'>
@@ -50,7 +68,7 @@ const Footer = () => {
           </div>
         </section>
         <section className='w-full text-center py-4 bg-slate-900'>
-            Copyright 2025 | Designed By <span className='text-yellow-500'><a href="https://ufocube.com">UFOCube</a></span>
+            Copyright 2025 | Designed By <span className='text-green-500 hover:text-yellow-400'><a href="https://ufocube.com"><b>UFOC</b>ube</a></span>
         </section>
     </div>
   )
