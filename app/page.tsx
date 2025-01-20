@@ -1,10 +1,28 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key, useState, useEffect } from "react";
 
 export default function Home() {
 
-  const latestNews = [
+  const [isDescriptionOpen, setIsDescriptionOpen]  = useState(false);
+
+  const homeContent: { title: string; description: string; image: string; }[] = [
+    {
+      title: "Padma Shri Dr. Jamun Singh Soy",
+      description: "This day symbolizes a new beginning, not only for the students who walk through our doors but for the entire community that believes in the transformative power of education. As we inaugurate this school, we also invite the community to join us in this collective endeavor. We must work together—parents, educators, communities, and leaders—to ensure that every child has access to the opportunities and resources needed to thrive. As a community, we must ensure that education remains inclusive, equitable, and empowering for all. Let us build an environment where every child, regardless of background, can pursue their dreams and contribute meaningfully to the world.",
+      image: "/images/home/img6.jpeg", // Provide a proper image path or URL
+    }
+  ];
+
+  type Content = {
+    title: string;
+    description: string;
+    link: string;
+    image?: string;
+  };
+
+  const latestNews: Content[] = [
     {
       title: "नई शिक्षा नीति को मिली, केन्द्रीय कैबिनेट की मंजूरी।",
       description: "Kolhan Model Public School which has been established on year 2024 under the directorship of …………………., This School .....",
@@ -83,6 +101,36 @@ export default function Home() {
     //     {/* <p className="text-lg mb-8">{news.description}</p> */}
     //   </div>
     // ));
+
+      const handleHomeContent = homeContent.map((item, index) => (
+        <div key={index} className="w-full">
+          <Image 
+            className="object-contain w-full rounded-md"
+            alt={item.title}
+            src={item.image}
+            width={600}
+            height={300}
+          />
+          <h3 className="text-2xl font-bold my-8">
+            {item.title}
+          </h3>
+          <p className={`w-full transition-all duration-500 ease-in-out ${ isDescriptionOpen ? "h-auto" : "h-16 overflow-hidden" }`} >
+            {
+              item.description.length <= 50 || isDescriptionOpen
+                ? item.description
+                : item.description.slice(0, 50) + "... "
+            }
+          </p>
+          <button
+            className="bg-green-800 px-8 md:px-10 lg:px-8 xl:px-20 py-4 rounded-md text-white mt-8 text-sm md:text-md lg:text-lg hover:bg-green-900"
+            onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}
+          >
+            Know More
+          </button>
+        </div>
+      ));
+
+    
 
     const galleryContent = gallery.map((item, index) => (
       <div key={index} className="w-full border-2 border-white rounded-md text-center md:w-[40%] lg:w-[20%]">
@@ -182,6 +230,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+
+        <section 
+          className="block px-20 w-full"
+        >
+          <div
+            className="block  border-2 border-red-500 w-full"
+          >
+            <p>{ handleHomeContent }</p>
           </div>
         </section>
 

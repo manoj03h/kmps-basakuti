@@ -34,7 +34,7 @@ const Footer = () => {
           <div className=' mb-4'>
             <p className='text-xl font-bold tracking-wide leading-relaxed mb-2'>
               Location
-              <hr />
+              <div className='border-b-2' />
             </p>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.562875268067!2d85.72278048558394!3d22.632792977787457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f587000b7f0d27%3A0x8fa67e55e7545815!2sKolhan%20Model%20Public%20school!5e0!3m2!1sen!2sin!4v1737142871645!5m2!1sen!2sin" 
