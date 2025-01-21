@@ -181,7 +181,7 @@ school community. The available positions are:
                         </h4>
 
                         <ul className="mb-2">
-                            <li className="pl-2"> Interested Candidates may e-mail their detailed CV at or Whatsapp <b>{"boipaisanjay108@gmail.com"}</b> or Whatsapp <b>{`(+91)-826-474-0590`}</b></li>
+                            <li className="pl-2"> Interested Candidates may Contact Us at: <b>{"boipaisanjay108@gmail.com"}</b> or Whatsapp <b>{`(+91) 7488363377`}</b></li>
                         </ul>
                     </div>
                 </div>

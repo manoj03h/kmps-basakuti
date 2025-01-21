@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const Academics = () => {
+const Academic = () => {
 
   // const latestNewsContent = latestNews.map((news, index) => (
   //   <div key={index} className="w-full border-2 border-slate-500 rounded-md bg-slate-100 px-20 py-10 text-center lg:w-[40%]">
@@ -19,7 +19,7 @@ const Academics = () => {
   return (
     <section className="relative flex flex-col justify-center items-center">
         <div className='grid place-content-center w-full h-[200px] bg-slate-300 mt-[80px]'>
-            <p className='text-6xl font-black text-slate-800'>Academics</p>
+            <p className='text-6xl font-black text-slate-800'>Academic</p>
         </div>
 
         <div className="relative flex flex-col justify-center items-center">
@@ -66,4 +66,4 @@ const Academics = () => {
   )
 }
 
-export default Academics
+export default Academic

@@ -6,9 +6,10 @@ import React from 'react'
 const Footer = () => {
   const navItems: {title: string; path: string}[] = [
     { title: 'Home', path: '/' },
-    { title: 'Latest News', path: '/LatestNews' },
-    { title: 'Articles', path: '/articles' },
-    { title: 'Academic\'s', path: '/academics' },
+    { title: 'Events', path: '/events' },
+    { title: 'students', path: '/students' },
+    { title: 'parents', path: '/parents' },
+    { title: 'Academic', path: '/academic' },
     { title: 'Career', path: '/career' },
     { title: 'Gallery', path: '/gallery' },
     { title: 'About', path: '/about' },

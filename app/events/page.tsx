@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const page = () => {
+const Events = () => {
 
   const latestNews = [
     // {
@@ -49,7 +49,7 @@ const page = () => {
   return (
     <section className="relative flex flex-col justify-center items-start">
       <div className='grid place-content-center w-full h-[200px] bg-slate-300 mt-[80px]'>
-        <p className='text-6xl font-black text-slate-800'>Latest News</p>
+        <p className='text-6xl font-black text-slate-800'>Events</p>
       </div>
     {/* <div className="relative flex flex-col justify-center items-center w-full h-full bg-white">
       
@@ -286,4 +286,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Events
